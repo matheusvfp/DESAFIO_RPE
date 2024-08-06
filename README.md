@@ -93,10 +93,6 @@ Se você quiser apoiar o projeto, deixe uma ⭐.
 
 ## Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
-
-## Apoie o Projeto 🙌
-Se você quiser apoiar o projeto, deixe uma ⭐.
-
 ______
 
 Made with ❤️ by [Matheus Vinícius](https://www.linkedin.com/in/matheusviniciusfp/).
