@@ -16,7 +16,7 @@ Para este desafio, foram desenvolvidos os seguintes casos de teste automatizados
 
 ### Estrutura do Projeto
 
-- **features/**: Contém os arquivos de características e definições dos testes.
+- **features/E2E**: Contém os arquivos de características e definições dos testes.
   - **login.feature**: Cenários e casos de teste para o fluxo de login.
   - **list_client.feature**: Cenários e casos de teste para a listagem de clientes.
   - **create_client.feature**: Cenários e casos de teste para o cadastro de clientes.
