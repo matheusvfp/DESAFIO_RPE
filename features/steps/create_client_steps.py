@@ -7,7 +7,7 @@ from faker import Faker
 
 
 @given(u'que o administrador está na página de cadastro de clientes')
-def step_impl(context):
+def registered_client_page(context):
     
     wait = WebDriverWait(context.browser, 10)
     actions = ActionChains(context.browser)
@@ -23,7 +23,7 @@ def step_impl(context):
     
         
 @when(u'preencher todos os campos obrigatórios com dados válidos e clicar em salvar')
-def step_impl(context):
+def submit_data_client(context):
     
     wait = WebDriverWait(context.browser, 10)
     fake = Faker('pt_BR')
@@ -38,12 +38,12 @@ def step_impl(context):
     
 
 @then(u'o cliente deve ser cadastrado com sucesso')
-def step_impl(context):
+def click_button_submit_registered(context):
     
     context.browser.find_element(By.ID, "botaoSalvar").submit()
 
 @then(u'o administrador deve ver uma mensagem de confirmação.')
-def step_impl(context):
+def message_sucess_registered_client(context):
     
     wait = WebDriverWait(context.browser, 10)
 
