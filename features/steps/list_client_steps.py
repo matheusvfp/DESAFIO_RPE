@@ -5,7 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 
 @given(u'que o administrador está na página de listagem de clientes')
-def step_impl(context):
+def admin_page_list_client(context):
     wait = WebDriverWait(context.browser, 10)
     actions = ActionChains(context.browser)
     
@@ -23,13 +23,13 @@ def step_impl(context):
 
 
 @when(u'acessar a funcionalidade de listagem')
-def step_impl(context):
+def click_list_page(context):
     
     wait = WebDriverWait(context.browser, 10)
     wait.until(EC.visibility_of_element_located((By.NAME, "j_idt20"))).click()
 
 @then(u'o sistema deve exibir todos os clientes cadastrados com suas respectivas informações')
-def step_impl(context):
+def list_client_registered(context):
     wait = WebDriverWait(context.browser, 10)
     table_responsive = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "table-responsive")))
     tbody = table_responsive.find_element(By.TAG_NAME, "tbody")
