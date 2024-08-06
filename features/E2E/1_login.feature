@@ -2,9 +2,9 @@ Feature: Login na página
     
     Scenario: Login no sistema RPE
 
-    Como usuário credenciado da RPE
-    Eu quero acessar o sistema Backoffice
-    Para realizar minhas atividades rotineiras
+    Como um administrador do sistema 
+    Eu quero acessar o sistema com as credenciais corretas 
+    Para garantir que o login seja realizado com sucesso
 
     Given que o usuário está na página de login
     When informar o login e a senha
